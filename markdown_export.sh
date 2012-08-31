@@ -10,10 +10,10 @@ if [[ -f $1 ]]; then
     # Convert Markdown to HTML
     html=`perl resources/Markdown.pl --html4tags $input_file`;
 
-    # Get wraping HTML
+    # Get wrapping HTML
     wrap=`cat resources/wrap.html`;
 
-    # Split wrap in placeholder
+    # Split wrap on placeholder
     placeholder='{{placeholder}}';
     wrap_before=${wrap%$placeholder*};
     wrap_after=${wrap#*$placeholder};
