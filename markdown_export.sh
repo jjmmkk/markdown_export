@@ -1,14 +1,14 @@
 #!/bin/bash
 
-if [[ -f $1 ]]; then
+if [[ -f "$1" ]]; then
 
     input_file=$1;
 
     # Make output file path
-    output_file=`echo $input_file | sed -e 's/\.[a-zA-Z]*$/.html/'`;
+    output_file=`echo "$input_file" | sed -e 's/\.[a-zA-Z]*$/.html/'`;
 
     # Convert Markdown to HTML
-    html=`perl resources/Markdown.pl --html4tags $input_file`;
+    html=`perl resources/Markdown.pl --html4tags "$input_file"`;
 
     # Get wrapping HTML
     wrap=`cat resources/wrap.html`;
@@ -19,6 +19,6 @@ if [[ -f $1 ]]; then
     wrap_after=${wrap#*$placeholder};
 
     # Combine parts and output in file
-    echo "$wrap_before$html$wrap_after" > $output_file;
+    echo "$wrap_before$html$wrap_after" > "$output_file";
 
 fi
