@@ -41,9 +41,9 @@ The following is an ordered list.
 
 The following is a block of code.
 
-        if [[ -f $1 ]]; then
-            echo 'A file!';
-        fi
+    if [[ -f $1 ]]; then
+        echo 'A file!';
+    fi
 
 This is a paragraph containing inline code. Lorem ipsum dolor sit amet, `pwd | tr -d "\n" | pbcopy`. Etiam ut nunc sed nibh interdum iaculis.
 
