@@ -33,10 +33,28 @@ The following is an unordered list.
 *   Sit amet consectetur
 *   Adipiscing elit
 
+The following is a nested unordered list.
+
+*   Lorem ipsum dolor
+*   Sit amet consectetur
+    *   Lorem ipsum dolor
+    *   Sit amet consectetur
+    *   Adipiscing elit
+*   Adipiscing elit
+
 The following is an ordered list.
 
 1.  Lorem ipsum dolor
 2.  Sit amet consectetur
+3.  Adipiscing elit
+
+The following is a nested ordered list.
+
+1.  Lorem ipsum dolor
+2.  Sit amet consectetur
+    1.  Lorem ipsum dolor
+    2.  Sit amet consectetur
+    3.  Adipiscing elit
 3.  Adipiscing elit
 
 The following is a block of code.
